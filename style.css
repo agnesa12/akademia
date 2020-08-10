@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden !important;
 }
 body{
     margin: 0;
     text-align: center;
+    overflow-x: hidden !important;
 }
 .container{
     width: 59%;
@@ -56,6 +58,7 @@ header{
     margin-top: 90px;
     margin-bottom: 48px;
     font-size: 13px;
+    opacity: 0.6;
 }
 .available-on a{
     text-decoration: none;
@@ -68,7 +71,7 @@ header{
     transition: 0.3s;
 }
 .available-on i:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 .fa-apple{
     margin-left: 10px !important;
@@ -79,9 +82,10 @@ header{
 header h2{
 
         font-size: 45px;
-        font-family: "Lato";
+        font-family: "Lato Hairline";
+        font-weight: lighter;
         color: #ffffff;
-        font-weight: 100;
+       letter-spacing: 0.02em;
         line-height: 1.067;
         text-align: center;
         width:39%;
@@ -130,7 +134,8 @@ header div img{
     position: relative;
 }
 #features-link{
-    color: royalblue;
+    color: rgb(33, 150, 243);
+    opacity: 1;
 }
 .navbar>div{
     display: flex;
@@ -142,11 +147,13 @@ header div img{
     margin-left: 20px;
     text-decoration: none;
         font-size: 12px;
-        font-family: "Lato";
-        color: #a1a1a1;
+        font-family: 'Lato', sans-serif;
+        color: #191515;
+        font-weight: 600;
         text-transform: uppercase;
         line-height: 2.333;
         transition: all 0.6s;
+        opacity: 0.6;
       
 }
 .navbar a:hover{
@@ -181,6 +188,8 @@ color: royalblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 75px;
+    border-bottom: rgba(0, 0, 0,0.102) solid 1px;
 }
 .group1> img{
     width: 100%;
@@ -190,7 +199,9 @@ color: royalblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 165px;
+    margin-top: 75px;
+    padding-bottom: 75px;
+    border-bottom: rgba(0, 0, 0,0.102) solid 1px;
 }
 .group2> img{
     width: 100%;
@@ -200,7 +211,7 @@ color: royalblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 165px;
+    margin-top: 75px;
 }
 .group3 img{
     margin-left: 70px;
@@ -239,6 +250,9 @@ color: royalblue;
     display: flex;
     justify-content: space-between;
     margin-top: 68px;
+}
+.clients .intro p{
+    margin-bottom: 0;
 }
 .how-it-works-text>div{
     width: calc(33.3% - 26.6px);
@@ -283,6 +297,7 @@ iframe{
 }
 .clients{
     position: relative;
+    overflow-x: hidden;
 }
 .clients img{
     display: block;
@@ -298,6 +313,8 @@ iframe{
 .quotation-marks img{
 margin-left: 4px;
 margin-right: 4px;
+margin-bottom: 0 !important;
+margin-top: 80px;
 }
 .clients .what-clients-say{
     width: 29%;
@@ -321,7 +338,6 @@ margin-right: 4px;
 .slick-slide{
     display: inline-block !important;
     outline: none !important;
-    overflow-x: hidden !important;
 }
 .slick-dots {
     display: flex;
@@ -340,11 +356,11 @@ margin-right: 4px;
     
       .slick-dots  button {
             display: block;
-            width: 13px;
-            height: 13px;
+            width: 8px;
+            height: 8px;
             padding: 0;
             
-            border: rgba(140,141,142,0.52) 2px solid;
+            border: #686868 1px solid;
             border-radius: 100%;
             background-color: white;
             outline: none;
@@ -372,20 +388,18 @@ margin-right: 4px;
     width: 100%;
 }
 .single-multiple-agency{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
 }
 .single-multiple-agency>div{
     border-style: solid;
     border-width: 1px;
     border-color: rgb(230, 230, 230);
-    padding: 36px 60px;
+    padding: 36px 36px;
 }
-.single-multiple-agency>div:hover{
-    border-color: rgb(33, 150, 243);
-    border-width: 2px;
-    transition: 0.3s;
-
+.multiple{
+    border: rgb(33, 150, 243) 2px solid !important;
 }
 .single-multiple-agency h4{
     font-size: 13px;
@@ -399,6 +413,10 @@ margin-right: 4px;
   font-family: "Lato";
   color: rgb(0, 0, 0);
   line-height: 1.176;
+  border-top: 1px solid rgba(112, 112, 112, 0.1);
+  border-bottom: 1px solid rgba(112, 112, 112, 0.1);
+  padding-top: 11px;
+    padding-bottom: 18px;
 }
 .single-multiple-agency h3 span{
 
@@ -454,6 +472,7 @@ input{
     font-family: "Lato";
     color: rgb(42, 45, 46);
     line-height: 1.501;
+    resize: none;
 }
 textarea::placeholder{
     color: #cfc6c6;
@@ -468,7 +487,7 @@ input::placeholder{
     text-align: left;
 }
 .contact button{
-    padding: 18px 23px;
+    padding: 13px 23px;
     line-height: normal;
     margin-top: 28px;
 }
@@ -535,14 +554,8 @@ footer p{
     .group1> img{
 margin-left: 50px;
     }
-    .group2{
-        margin-top: 100px;
-    }
     .group2>img{
         margin-right: 50px;
-    }
-    .group3{
-        margin-top: 100px;
     }
     .group3>img{
         margin-left: 30px;
@@ -597,6 +610,7 @@ margin-bottom: 22px;
     }
     .navbar .container>div a{
         margin-left: 0;
+        color: #cac5c5;
     }
     .wrapper{
         display: block !important;
@@ -649,6 +663,7 @@ iframe{
     grid-template-columns: auto auto auto;
 }
 .single-multiple-agency{
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
