@@ -612,6 +612,9 @@ margin-bottom: 22px;
         margin-left: 0;
         color: #cac5c5;
     }
+    .navbar .container>div a:hover{
+        color: #2196f3;
+    }
     .wrapper{
         display: block !important;
     }
